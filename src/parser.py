@@ -115,7 +115,7 @@ if __name__ == "__main__":
     additional_info = parse_additional_info(cards_page_soup)
     faqs = parse_FAQ(cards_page_soup)
 
-    with open('data/alfabank_info.txt', 'w', encoding='utf-8') as file:
+    with open('../data/alfabank_info.txt', 'w', encoding='utf-8') as file:
         file.write("Альфабанк Беларусь выдаёт следующие типы карт:")
         for card in cards:
             file.write(f" {card['title']},")
